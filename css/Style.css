@@ -1,0 +1,102 @@
+
+:root{
+    --nav-gradient:linear-gradient(to right, #f7ff00, #db36a4); 
+    --blu-grad:linear-gradient(to right, #4ca1af, #c4e0e5); 
+    --pink-grad:linear-gradient(to right, #fd746c, #ff9068);
+    --heading-font:'Texturina', serif;
+    --top-font:'Noto Sans KR', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0%;
+}
+.text-gray{
+    color: black;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav{
+    padding: 0.5em 1em;
+    background: var(--pink-grad);
+    position: relative;
+    justify-content: space-between;
+    overflow-y: hidden;
+    height: 0rem;
+    min-height: 10vh;
+    transition: height 1s ease-in-out;
+}
+nav .nav-brand{
+    font-size: 2.5em;
+    font-family: var(--heading-font);
+    padding-bottom: 0.6em;
+}
+
+nav .nav-menu-list{
+    list-style: none;
+    padding: 0.5em 0.5em;
+}
+
+nav .nav-menu-list .link-elements{
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-bottom: 0.5em;
+    padding-top: 0.1em;
+    font-family: var(--top-font);
+    font-size: 1.5em;
+}
+nav .nav-menu-list .link-elements:hover{
+    background-color:black;
+}
+nav .nav-menu-list .link-elements:hover a{
+    color: #c4e0e5;
+}
+nav .nav-menu-list .link-elements a:hover{
+    color:greenyellow;
+}
+nav .social-icons{
+    padding-top: 1.5em;
+}
+nav .social-icons a{
+    padding-left: 0.5em;
+    font-size: 1.5em;
+}
+nav .social-icons a:hover{
+    color:greenyellow;
+}
+nav .toggle{
+    max-width: 95%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: none;  
+}
+nav .toggle .toggle-collapse{
+    display: flex;
+    justify-content: flex-end;
+    padding:1.7em 4em;
+}
+nav .toggle .toggle-collapse i{
+    font-size: 1.5em;
+}
+.collapse{
+    height:55vh;
+}
+/*  Media Query  */
+@media only screen and (max-width:786px){
+    nav .nav-menu-list{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column !important;
+        display: block !important;
+    }
+    nav .toggle{
+        display: initial;
+    }
+}
