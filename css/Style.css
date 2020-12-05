@@ -70,22 +70,23 @@ nav .social-icons a:hover{
     color:greenyellow;
 }
 nav .toggle{
-    max-width: 95%;
     width: 100%;
     position: absolute;
     overflow: hidden;
     display: none;  
+    right: 1rem;
+    top: 2rem;
 }
 nav .toggle .toggle-collapse{
     display: flex;
     justify-content: flex-end;
-    padding:1.7em 4em;
+    /*padding:1.7em 4em;*/
 }
 nav .toggle .toggle-collapse i{
     font-size: 1.5em;
 }
 .collapse{
-    height:55vh;
+    height:30rem;
 }
 /*  Media Query  */
 @media only screen and (max-width:786px){
@@ -99,4 +100,9 @@ nav .toggle .toggle-collapse i{
     nav .toggle{
         display: initial;
     }
+}
+@media (min-width:787px){
+   .collapse{
+       height: 0rem !important;
+   }
 }
