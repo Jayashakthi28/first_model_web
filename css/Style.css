@@ -35,9 +35,9 @@ nav{
     transition: height 1s ease-in-out;
 }
 nav .nav-brand{
-    font-size: 2.5em;
-    font-family: var(--heading-font);
-    padding-bottom: 0.6em;
+    font-size: 3em;
+    font-family: 'Londrina Solid', cursive;
+    padding-top: 0.5rem;
 }
 
 nav .nav-menu-list{
@@ -49,8 +49,8 @@ nav .nav-menu-list .link-elements{
     padding-left: 0.7em;
     padding-right: 0.7em;
     padding-bottom: 0.5em;
-    padding-top: 0.1em;
-    font-family: var(--top-font);
+    padding-top: 0.5em;
+    font-family: 'Domine', serif;
     font-size: 1.5em;
 }
 nav .nav-menu-list .link-elements:hover{
@@ -135,6 +135,7 @@ main .background-con button:hover{
     background: transparent;
     border: 2px solid peru;
     color: #d7e1ec;
+    text-shadow: 1px 1px black;
 }
 /************************************************/
 /*  Media Query  */
