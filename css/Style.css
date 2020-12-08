@@ -114,15 +114,12 @@ main .background-con h3{
     font-family: 'East Sea Dokdo', cursive;
     font-weight: lighter;
     color: black;
+    text-shadow: 2px 2px white;
 }
 main .coder-head{
     padding-top: 8rem;
     text-align: center;
     font-family: 'Acme', sans-serif;
-}
-main .coder-head h1{
-    
-   
 }
 main .background-con button{
     padding: 1rem 3rem;
