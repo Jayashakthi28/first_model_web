@@ -94,6 +94,7 @@ nav .toggle .toggle-collapse i{
 /************************************************/
 main .background-con{
   background: url(../assets/pexels-negative-space-169573.jpg);
+  background-color: gray;
   background-size: cover;
   margin: 0;
   height: 110vh;
