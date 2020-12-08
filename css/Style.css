@@ -1,6 +1,6 @@
 
 :root{
-    --nav-gradient:linear-gradient(to right, #f7ff00, #db36a4); 
+    --nav-gradient:linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
     --blu-grad:linear-gradient(to right, #4ca1af, #c4e0e5); 
     --pink-grad:linear-gradient(to right, #fd746c, #ff9068);
     --heading-font:'Texturina', serif;
@@ -20,10 +20,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+.bt{
+    cursor: pointer;
+    border-radius: 3rem;
+}
 nav{
     padding: 0.5em 1em;
-    background: var(--pink-grad);
+    background: var(--nav-gradient);
     position: relative;
     justify-content: space-between;
     overflow-y: hidden;
@@ -88,6 +91,51 @@ nav .toggle .toggle-collapse i{
 .collapse{
     height:30rem;
 }
+/************************************************/
+main .background-con{
+  background: url(../assets/pexels-negative-space-169573.jpg);
+  background-size: cover;
+  margin: 0;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+main .background-con h1{
+    margin-top: 0;
+    padding-top: 1rem;
+    font-size: 3.8rem;
+    color: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+main .background-con h3{
+    margin: 0;
+    font-size: 3em;
+    font-family: 'East Sea Dokdo', cursive;
+    font-weight: lighter;
+    color: black;
+}
+main .coder-head{
+    padding-top: 8rem;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+main .coder-head h1{
+    
+   
+}
+main .background-con button{
+    padding: 1rem 3rem;
+    border: none;
+    margin-top: 0;
+    font-size: 1rem;
+    font-family: 'Balsamiq Sans', cursive;
+    background:var(--pink-grad);
+}
+main .background-con button:hover{
+    background: transparent;
+    border: 2px solid peru;
+    color: #d7e1ec;
+}
+/************************************************/
 /*  Media Query  */
 @media only screen and (max-width:786px){
     nav .nav-menu-list{
