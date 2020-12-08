@@ -1,5 +1,15 @@
-const toggle=document.querySelector('.toggle span');
-const nav=document.querySelector('.nav');
-toggle.onclick=()=>{
-    nav.classList.toggle('collapse');
-}
+$(document).ready(function (){ 
+    $nav=$('.nav');
+    $toggle=$('.toggle span');
+    $toggle.click(function(){
+        $nav.toggleClass('collapse');
+    })
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        dots:false,
+        nav:true,
+    }); 
+   
+   });

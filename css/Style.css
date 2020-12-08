@@ -9,6 +9,9 @@
 a{
     text-decoration: none;
 }
+h3,h2{
+    color: white;
+}
 body{
     margin: 0%;
 }
@@ -23,6 +26,11 @@ body{
 .bt{
     cursor: pointer;
     border-radius: 3rem;
+    padding: 1rem 3rem;
+    border: none;
+    margin-top: 0;
+    font-size: 1rem;
+    font-family: 'Balsamiq Sans', cursive;
 }
 nav{
     padding: 0.5em 1em;
@@ -87,6 +95,7 @@ nav .toggle .toggle-collapse{
 }
 nav .toggle .toggle-collapse i{
     font-size: 1.5em;
+    cursor: pointer;
 }
 .collapse{
     height:30rem;
@@ -136,6 +145,50 @@ main .background-con button:hover{
     text-shadow: 1px 1px black;
 }
 /************************************************/
+main .blog{
+    background: url('../assets/Abract01.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: right;
+    width: 100%;
+    background-color: black;
+    background-size: 64%;
+}
+main .blog .container{
+    padding-top: 3rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 4rem;
+    box-shadow: 0px 15px 20px rgba(3,3,3,1);
+}
+main .blog-post .blog-content h2{
+    font-family: 'Patrick Hand', cursive;
+}
+main .blog-post .blog-content span{
+    color: white;
+    padding-bottom: 1rem;
+    display: block;
+}
+main .blog-post .blog-content a{
+    color: black;
+}
+main .blog-post .blog-content button{
+    background: var(--pink-grad);
+}
+main .blog-post .blog-content button:hover{
+    background: transparent;
+    border: 2px solid peru;
+    color: #d7e1ec;
+    text-shadow: 1px 1px black;
+}
+main .blog-post .blog-content a:hover{
+    color:white;
+}
 /*  Media Query  */
 @media only screen and (max-width:786px){
     nav .nav-menu-list{
