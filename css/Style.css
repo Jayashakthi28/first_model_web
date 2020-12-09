@@ -156,6 +156,7 @@ main .blog{
 }
 main .blog .container{
     padding-top: 3rem;
+    position: relative;
 }
 
 main .blog-post .blog-content{
@@ -188,6 +189,23 @@ main .blog-post .blog-content button:hover{
 }
 main .blog-post .blog-content a:hover{
     color:white;
+}
+main .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    left: 50vw;
+    padding-top: 0.0002rem;
+    margin: 0 auto;
+    margin-top: -1.5rem;
+}
+main .container .owl-nav [class*='owl-']{
+    font-size: 2em;
+    color: black;
+    background-color: greenyellow;
+}
+main .container .owl-nav [class*='owl-']:hover{
+    background-color: transparent;
+    color: greenyellow;
 }
 /*  Media Query  */
 @media only screen and (max-width:786px){
