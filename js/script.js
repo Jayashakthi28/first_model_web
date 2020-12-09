@@ -24,7 +24,7 @@ $(document).ready(function (){
             },
             0:{
                 items:1,
-                nav:false,
+                nav:true,
                 loop:true
             }
 

@@ -193,13 +193,13 @@ main .blog-post .blog-content a:hover{
 main .container .owl-nav{
     position: absolute;
     top: 0%;
-    left: 50vw;
+    left: 47vw;
     padding-top: 0.0002rem;
     margin: 0 auto;
     margin-top: -1.5rem;
 }
 main .container .owl-nav [class*='owl-']{
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
     background-color: greenyellow;
 }
@@ -218,6 +218,19 @@ main .container .owl-nav [class*='owl-']:hover{
     }
     nav .toggle{
         display: initial;
+    }
+    main .container .owl-nav [class*='owl-']{
+        font-size: 1em;
+        color: black;
+        background-color: greenyellow;
+    }
+    main .container .owl-nav{
+        position: absolute;
+        top: 0%;
+        left: 45vw;
+        padding-top: 0.0002rem;
+        margin: 0 auto;
+        margin-top: -1.5rem;
     }
 }
 @media (min-width:787px){
