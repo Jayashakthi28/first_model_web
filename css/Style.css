@@ -15,7 +15,7 @@ h3,h2{
 }
 body{
     margin: 0%;
-    overflow-x: hidden;
+    overflow-x:hidden;
     background-color: black;
 }
 .text-gray{
@@ -77,6 +77,7 @@ nav .nav-menu-list .link-elements a:hover{
 }
 nav .social-icons{
     padding-top: 1.5em;
+    overflow: hidden;
 }
 nav .social-icons a{
     padding-left: 0.5em;
@@ -112,9 +113,10 @@ main .background-con{
   background-size: cover;
   margin: 0;
   height: 110vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden !important;
 }
 main .background-con h1{
     margin-top: 0;
@@ -135,6 +137,7 @@ main .coder-head{
     padding-top: 8rem;
     text-align: center;
     font-family: 'Acme', sans-serif;
+    overflow-x: hidden;
 }
 main .background-con button{
     padding: 1rem 3rem;
@@ -439,6 +442,7 @@ main .footer{
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     background-color: #98de5b;
+    overflow: hidden;
 }
 main .footer .ab-head{
     font-family: 'Londrina Solid', cursive;
@@ -456,23 +460,29 @@ main .footer .newsletter-fo h2{
     display: flex;
     justify-content: center;
 }
-main .footer .newsletter-fo{
-    padding-left: 4rem;
-}
 main .footer .email{
-    background: transparent;
-    box-shadow: 0;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border: 1px bottom black;
-    padding-top: 1.5rem;
+    background: black;
+    border:1px solid black;
+    width:30%;
+    border: none;
+    padding: 1rem;
+    display: inline-block;
+    margin: 0.5rem 1rem;
     font-size: 1.1rem;
+    color: yellowgreen;
+    font-family: 'Electrolize', sans-serif;
 }
-main .footer .email-box{
+main .footer .email-sub i{
+    color: yellowgreen;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: black;
+    margin-top: 0.6rem;
+}
+main .footer .email-com{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 main .footer a{
     display: flex;
@@ -514,6 +524,34 @@ main .footer .btn{
     color: yellowgreen;
     padding: 0.5rem 1rem;
     font-family: 'Balsamiq Sans', cursive;
+}
+main .copyright{
+    background-color: black;
+}
+main .copyright .copy{
+    display:flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    font-family: 'Acme', sans-serif;
+    color: yellowgreen;
+}
+main .copyright .copy i{
+    font-size: 0.7em;
+    padding-top: 0.38rem;
+    padding-right: 0.1rem;
+}
+main .copyright .copy1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    color:#f67062;
+}
+main .copyright .copy1 i{
+    padding-top: 0.2rem;
+    color: cyan;
 }
 /***********************Footer*************************/
 /*  Media Query  */

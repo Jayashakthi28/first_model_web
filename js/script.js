@@ -7,7 +7,7 @@ $(document).ready(function (){
     $('.owl-carousel').owlCarousel({
         //loop:true,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:3500,
         dots:false,
         nav:true,
         navText:[$('.owl-nav .owl-prev'),$('.owl-nav .owl-next')],
@@ -30,5 +30,10 @@ $(document).ready(function (){
 
         }
     }); 
-   
+    $('.contact-us .top').click(function(){
+        $('html,body').animate({
+            scrollTop:0
+        },1000);
+    })
+    AOS.init();
    });
