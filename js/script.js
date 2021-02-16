@@ -1,3 +1,9 @@
+var animation=bodymovin.loadAnimation({
+	container:document.getElementById('page-load'),
+	loop:true,
+	autoplay:true,
+	path:'./js/data.json'
+})
 $(document).ready(function (){ 
     $nav=$('.nav');
     $toggle=$('.toggle span');

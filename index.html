@@ -89,7 +89,8 @@
     <!--/Fonts-->
   </head>
 
-  <body>
+  <body id="body">
+    <div id="page-load" class="page-load"></div>
     <!--Navigation-->
     <nav class="nav flex" id="nav">
       <div class="toggle">
@@ -508,7 +509,14 @@
       </section>
     </main>
   </body>
+  <script src="./js/lottie.js"></script>
   <script src="./js/jquery.min.js"></script>
+  <script>window.onload = function() {
+    document.getElementById('body').className = 'body';
+  };</script>
+      <script>$(window).on("load",function(){
+        $("#page-load").fadeOut("slow");
+      })</script> 
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/aos.js"></script>
   <script src="./js/script.js"></script>
