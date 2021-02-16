@@ -512,11 +512,13 @@
   <script src="./js/lottie.js"></script>
   <script src="./js/jquery.min.js"></script>
   <script>window.onload = function() {
-    document.getElementById('body').className = 'body';
+      window.setTimeout(function(){
+  $('#body').addClass("body");
+  }, 2500);
   };</script>
       <script>$(window).on("load",function(){
-        $("#page-load").fadeOut("slow");
-      })</script> 
+      $("#page-load").delay(2500).fadeOut("slow");
+    })</script>  
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/aos.js"></script>
   <script src="./js/script.js"></script>
